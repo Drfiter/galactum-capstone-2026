@@ -1,0 +1,77 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1800' height='1100' viewBox='0 0 1800 1100'><rect width='100%' height='100%' fill='white'/><defs><marker id='arrow' markerWidth='12' markerHeight='12' refX='10' refY='5' orient='auto-start-reverse'><path d='M 1 1 L 10 5 L 1 9' fill='none' stroke='black' stroke-width='1.4'/></marker></defs><g font-family='Arial, sans-serif' fill='black'>
+<text x='35' y='57' font-size='32' font-weight='bold'>Galactum MVP v0.12 — Diagrama de Componentes</text>
+<rect x='25' y='100' width='400' height='760' fill='none' stroke='black' stroke-width='2'/><text x='37' y='130' font-size='21'>CLIENTE</text>
+<rect x='475' y='100' width='1300' height='760' fill='none' stroke='black' stroke-width='2'/><text x='487' y='130' font-size='21'>SERVIDOR · módulos en el mismo proceso Godot</text>
+<polyline points='225,280 225,410' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='225,540 225,670' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='390,735 520,735' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='685,670 685,540' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='685,410 685,340 1100,340 1100,280' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='850,475 1000,475' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='1330,215 1400,215' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='1220,410 1220,280' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='1330,475 1400,475' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='1330,250 1365,250 1365,735 1400,735' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='1565,540 1565,670' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='600,410 600,280' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='1165,540 1165,670' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<polyline points='850,510 925,510 925,735 1000,735' fill='none' stroke='black' stroke-width='2' stroke-dasharray='9 6' marker-end='url(#arrow)' />
+<rect x='60' y='150' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='225' y='208' font-size='25' text-anchor='middle'>«component»</text>
+<text x='225' y='238' font-size='25' text-anchor='middle'>Interfaz</text>
+<rect x='60' y='410' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='225' y='453' font-size='25' text-anchor='middle'>«component»</text>
+<text x='225' y='483' font-size='25' text-anchor='middle'>Cliente de juego</text>
+<text x='225' y='513' font-size='25' text-anchor='middle'>Réplica y fachada</text>
+<rect x='60' y='670' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='225' y='728' font-size='25' text-anchor='middle'>«component»</text>
+<text x='225' y='758' font-size='25' text-anchor='middle'>Enlace WebSocket</text>
+<rect x='520' y='670' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='685' y='728' font-size='25' text-anchor='middle'>«component»</text>
+<text x='685' y='758' font-size='25' text-anchor='middle'>Gateway WebSocket</text>
+<rect x='520' y='410' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='685' y='453' font-size='25' text-anchor='middle'>«component»</text>
+<text x='685' y='483' font-size='25' text-anchor='middle'>Servidor de juego</text>
+<text x='685' y='513' font-size='25' text-anchor='middle'>Tick, sesiones, réplica</text>
+<rect x='520' y='150' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='685' y='208' font-size='25' text-anchor='middle'>«artifact»</text>
+<text x='685' y='238' font-size='25' text-anchor='middle'>Guardado JSON</text>
+<rect x='1000' y='150' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='1165' y='208' font-size='25' text-anchor='middle'>«component»</text>
+<text x='1165' y='238' font-size='25' text-anchor='middle'>Mundo y entidades</text>
+<rect x='1400' y='150' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='1565' y='208' font-size='25' text-anchor='middle'>«component»</text>
+<text x='1565' y='238' font-size='25' text-anchor='middle'>Índice espacial</text>
+<rect x='1000' y='410' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='1165' y='468' font-size='25' text-anchor='middle'>«component»</text>
+<text x='1165' y='498' font-size='25' text-anchor='middle'>Flotas y minería</text>
+<rect x='1400' y='410' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='1565' y='468' font-size='25' text-anchor='middle'>«component»</text>
+<text x='1565' y='498' font-size='25' text-anchor='middle'>Resolver de combate</text>
+<rect x='1000' y='670' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='1165' y='713' font-size='25' text-anchor='middle'>«component»</text>
+<text x='1165' y='743' font-size='25' text-anchor='middle'>Economía e informes</text>
+<text x='1165' y='773' font-size='25' text-anchor='middle'>Apoyo del MVP integrado</text>
+<rect x='1400' y='670' width='330' height='130' fill='white' stroke='black' stroke-width='2'/>
+<text x='1565' y='713' font-size='25' text-anchor='middle'>«component»</text>
+<text x='1565' y='743' font-size='25' text-anchor='middle'>Catalog y datos JSON</text>
+<text x='1565' y='773' font-size='25' text-anchor='middle'>También usados en cliente</text>
+<rect x='226' y='328' width='48' height='34' fill='white'/><text x='250' y='352' font-size='21' text-anchor='middle'>C1</text>
+<rect x='226' y='588' width='48' height='34' fill='white'/><text x='250' y='612' font-size='21' text-anchor='middle'>C2</text>
+<rect x='431' y='698' width='48' height='34' fill='white'/><text x='455' y='722' font-size='21' text-anchor='middle'>C3</text>
+<rect x='691' y='588' width='48' height='34' fill='white'/><text x='715' y='612' font-size='21' text-anchor='middle'>C4</text>
+<rect x='846' y='303' width='48' height='34' fill='white'/><text x='870' y='327' font-size='21' text-anchor='middle'>C5</text>
+<rect x='901' y='438' width='48' height='34' fill='white'/><text x='925' y='462' font-size='21' text-anchor='middle'>C6</text>
+<rect x='1341' y='173' width='48' height='34' fill='white'/><text x='1365' y='197' font-size='21' text-anchor='middle'>C7</text>
+<rect x='1226' y='328' width='48' height='34' fill='white'/><text x='1250' y='352' font-size='21' text-anchor='middle'>C8</text>
+<rect x='1341' y='433' width='48' height='34' fill='white'/><text x='1365' y='457' font-size='21' text-anchor='middle'>C9</text>
+<rect x='1341' y='583' width='48' height='34' fill='white'/><text x='1365' y='607' font-size='21' text-anchor='middle'>C10</text>
+<rect x='1576' y='588' width='48' height='34' fill='white'/><text x='1600' y='612' font-size='21' text-anchor='middle'>C11</text>
+<rect x='541' y='328' width='48' height='34' fill='white'/><text x='565' y='352' font-size='21' text-anchor='middle'>C12</text>
+<rect x='1176' y='588' width='48' height='34' fill='white'/><text x='1200' y='612' font-size='21' text-anchor='middle'>C13</text>
+<rect x='901' y='588' width='48' height='34' fill='white'/><text x='925' y='612' font-size='21' text-anchor='middle'>C14</text>
+<text x='35' y='962' font-size='21'>Notación UML simplificada: componentes, artefacto de datos y dependencias discontinuas consumidor → proveedor.</text>
+<text x='35' y='994' font-size='21'>C1–C14: relaciones explicadas en Diagrama_Componentes_Galactum.md; las respuestas pueden circular en sentido inverso.</text>
+<text x='35' y='1026' font-size='21'>Catálogos compartidos en cliente y servidor; se omiten dependencias auxiliares. Los módulos no son microservicios.</text>
+<text x='35' y='1058' font-size='21'>Persistencia dentro de game_server.gd. Fuentes: S5–S9. Despliegue Docker documentado por separado.</text>
+</g></svg>

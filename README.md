@@ -52,6 +52,8 @@ El proyecto se planificó con una metodología ágil basada en Scrum:
 
 ## Arquitectura de la solución
 
+Para el corte de Fase 2, MVP v0.12, consultar la [Vista Lógica](./Fase%202/Evidencias%20Proyecto%20%28version%20Agil%29/Arquitectura/Vista_Logica_Galactum.md), el [Diagrama de Componentes](./Fase%202/Evidencias%20Proyecto%20%28version%20Agil%29/Arquitectura/Diagrama_Componentes_Galactum.md) y el [Word consolidado](./Fase%202/Evidencias%20Proyecto%20%28version%20Agil%29/Arquitectura/Arquitectura_Galactum_Vista_Logica_y_Componentes.docx). El esquema siguiente resume la base histórica; la entrega web añade Nginx y persistencia JSON según las evidencias enlazadas.
+
 ```text
 ┌────────────────────┐
 │   Cliente Godot    │
@@ -83,7 +85,8 @@ Características ya trabajadas:
 |---|---|---|
 | M0 | Completado | Conexión y protocolo base Cliente ↔ SSS |
 | M1 | Completado / integrado | WorldState, secuencias, desync e interacción del cliente |
-| M2 | Activo | Integración y evolución del mundo jugable |
+| M2 | Antecedente | Integración y evolución de la base de mundo |
+| MVP v0.12 | Corte documental Fase 2 | Recorrido minero/PvE observado; Docker stop/start y arquitectura documentados, con validaciones pendientes explícitas |
 
 ## Instrucciones generales de ejecución local
 Requisitos:
