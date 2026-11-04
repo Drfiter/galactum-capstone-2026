@@ -1,0 +1,35 @@
+{
+  "name":"Diagrama_Componentes_Galactum", "title":"Galactum MVP v0.12 — Diagrama de Componentes", "width":1800,"height":1100,"uml":true,
+  "groups":[{"id":"cliente","label":"CLIENTE","x":25,"y":100,"w":400,"h":760},{"id":"servidor","label":"SERVIDOR · módulos en el mismo proceso Godot","x":475,"y":100,"w":1300,"h":760}],
+  "nodes":[
+    {"id":"ui","text":["Interfaz"],"x":60,"y":150,"w":330,"h":130},
+    {"id":"replica","text":["Cliente de juego","Réplica y fachada"],"x":60,"y":410,"w":330,"h":130},
+    {"id":"wslink","text":["Enlace WebSocket"],"x":60,"y":670,"w":330,"h":130},
+    {"id":"gateway","text":["Gateway WebSocket"],"x":520,"y":670,"w":330,"h":130},
+    {"id":"servidor_juego","text":["Servidor de juego","Tick, sesiones, réplica"],"x":520,"y":410,"w":330,"h":130},
+    {"id":"save","text":["Guardado JSON"],"x":520,"y":150,"w":330,"h":130,"artifact":true},
+    {"id":"mundo","text":["Mundo y entidades"],"x":1000,"y":150,"w":330,"h":130},
+    {"id":"indice","text":["Índice espacial"],"x":1400,"y":150,"w":330,"h":130},
+    {"id":"flotas","text":["Flotas y minería"],"x":1000,"y":410,"w":330,"h":130},
+    {"id":"resolver","text":["Resolver de combate"],"x":1400,"y":410,"w":330,"h":130},
+    {"id":"apoyo","text":["Economía e informes","Apoyo del MVP integrado"],"x":1000,"y":670,"w":330,"h":130},
+    {"id":"catalog","text":["Catalog y datos JSON","También usados en cliente"],"x":1400,"y":670,"w":330,"h":130}
+  ],
+  "edges":[
+    {"id":"C1","from":"ui","to":"replica","points":[[225,280],[225,410]],"label":[250,345]},
+    {"id":"C2","from":"replica","to":"wslink","points":[[225,540],[225,670]],"label":[250,605]},
+    {"id":"C3","from":"wslink","to":"gateway","points":[[390,735],[520,735]],"label":[455,715]},
+    {"id":"C4","from":"gateway","to":"servidor_juego","points":[[685,670],[685,540]],"label":[715,605]},
+    {"id":"C5","from":"servidor_juego","to":"mundo","points":[[685,410],[685,340],[1100,340],[1100,280]],"label":[870,320]},
+    {"id":"C6","from":"servidor_juego","to":"flotas","points":[[850,475],[1000,475]],"label":[925,455]},
+    {"id":"C7","from":"mundo","to":"indice","points":[[1330,215],[1400,215]],"label":[1365,190]},
+    {"id":"C8","from":"flotas","to":"mundo","points":[[1220,410],[1220,280]],"label":[1250,345]},
+    {"id":"C9","from":"flotas","to":"resolver","points":[[1330,475],[1400,475]],"label":[1365,450]},
+    {"id":"C10","from":"mundo","to":"catalog","points":[[1330,250],[1365,250],[1365,735],[1400,735]],"label":[1365,600]},
+    {"id":"C11","from":"resolver","to":"catalog","points":[[1565,540],[1565,670]],"label":[1600,605]},
+    {"id":"C12","from":"servidor_juego","to":"save","points":[[600,410],[600,280]],"label":[565,345]},
+    {"id":"C13","from":"flotas","to":"apoyo","points":[[1165,540],[1165,670]],"label":[1200,605]},
+    {"id":"C14","from":"servidor_juego","to":"apoyo","points":[[850,510],[925,510],[925,735],[1000,735]],"label":[925,605]}
+  ],
+  "notes":["Notación UML simplificada: componentes, artefacto de datos y dependencias discontinuas consumidor → proveedor.","C1–C14: relaciones explicadas en Diagrama_Componentes_Galactum.md; las respuestas pueden circular en sentido inverso.","Catálogos compartidos en cliente y servidor; se omiten dependencias auxiliares. Los módulos no son microservicios.","Persistencia dentro de game_server.gd. Fuentes: S5–S9. Despliegue Docker documentado por separado."]
+}

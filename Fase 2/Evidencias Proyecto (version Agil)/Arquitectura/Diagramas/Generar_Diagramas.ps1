@@ -18,6 +18,7 @@ foreach($file in Get-ChildItem -LiteralPath $PSScriptRoot -Filter "$Nombre.json"
     $svg=[Text.StringBuilder]::new();[void]$svg.AppendLine("<svg xmlns='http://www.w3.org/2000/svg' width='$($m.width)' height='$($m.height)' viewBox='0 0 $($m.width) $($m.height)'><rect width='100%' height='100%' fill='white'/><defs><marker id='arrow' markerWidth='12' markerHeight='12' refX='10' refY='5' orient='auto-start-reverse'><path d='M 1 1 L 10 5 L 1 9' fill='none' stroke='black' stroke-width='1.4'/></marker></defs><g font-family='Arial, sans-serif' fill='black'>")
     $g.DrawString($m.title,$title,[Drawing.Brushes]::Black,35,30);[void]$svg.AppendLine("<text x='35' y='57' font-size='32' font-weight='bold'>$(Esc $m.title)</text>")
     $cells=[Text.StringBuilder]::new();[void]$cells.AppendLine('<mxCell id="0"/><mxCell id="1" parent="0"/>')
+    [void]$cells.AppendLine("<mxCell id='title' value='$(Esc $m.title)' style='text;html=0;align=left;fontSize=32;fontStyle=1;fontColor=#000000;' vertex='1' parent='1'><mxGeometry x='35' y='25' width='$($m.width-70)' height='50' as='geometry'/></mxCell>")
     foreach($box in $m.groups) {
         $g.DrawRectangle($pen,$box.x,$box.y,$box.w,$box.h);$g.DrawString($box.label,$small,[Drawing.Brushes]::Black,([single]$box.x+12),([single]$box.y+12))
         [void]$svg.AppendLine("<rect x='$($box.x)' y='$($box.y)' width='$($box.w)' height='$($box.h)' fill='none' stroke='black' stroke-width='2'/><text x='$($box.x+12)' y='$($box.y+30)' font-size='21'>$(Esc $box.label)</text>")
@@ -35,14 +36,14 @@ foreach($file in Get-ChildItem -LiteralPath $PSScriptRoot -Filter "$Nombre.json"
     foreach($n in $m.nodes) {
         $g.FillRectangle([Drawing.Brushes]::White,$n.x,$n.y,$n.w,$n.h);$g.DrawRectangle($pen,$n.x,$n.y,$n.w,$n.h)
         [void]$svg.AppendLine("<rect x='$($n.x)' y='$($n.y)' width='$($n.w)' height='$($n.h)' fill='white' stroke='black' stroke-width='2'/>")
-        $lines=@($n.text);if($m.uml -and !$n.artifact){$lines=@('«component»')+$lines};if($n.artifact){$lines=@('«artifact»')+$lines}
+        $lines=@($n.text);if($m.uml -and !$n.artifact){$lines=@(([string][char]171+'component'+[char]187))+$lines};if($n.artifact){$lines=@(([string][char]171+'artifact'+[char]187))+$lines}
         $step=30;$first=$n.y+($n.h-($lines.Count-1)*$step)/2
         for($i=0;$i -lt $lines.Count;$i++){$yy=$first+$i*$step;$g.DrawString($lines[$i],$font,[Drawing.Brushes]::Black,[Drawing.RectangleF]::new($n.x,($yy-17),$n.w,34),$fmt);[void]$svg.AppendLine("<text x='$($n.x+$n.w/2)' y='$($yy+8)' font-size='25' text-anchor='middle'>$(Esc $lines[$i])</text>")}
         $value=Esc ($lines -join '&#xa;');$value=$value.Replace('&amp;#xa;','&#xa;')
         [void]$cells.AppendLine("<mxCell id='$($n.id)' value='$value' style='rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=25;align=center;verticalAlign=middle;' vertex='1' parent='1'><mxGeometry x='$($n.x)' y='$($n.y)' width='$($n.w)' height='$($n.h)' as='geometry'/></mxCell>")
     }
     foreach($edge in $m.edges){$x=$edge.label[0];$y=$edge.label[1];$g.FillRectangle([Drawing.Brushes]::White,($x-24),($y-17),48,34);$g.DrawString($edge.id,$small,[Drawing.Brushes]::Black,[Drawing.RectangleF]::new(($x-24),($y-17),48,34),$fmt);[void]$svg.AppendLine("<rect x='$($x-24)' y='$($y-17)' width='48' height='34' fill='white'/><text x='$x' y='$($y+7)' font-size='21' text-anchor='middle'>$($edge.id)</text>");[void]$cells.AppendLine("<mxCell id='$($edge.id)_label' value='$($edge.id)' style='text;html=0;fillColor=#FFFFFF;fontSize=21;align=center;fontColor=#000000;' vertex='1' parent='1'><mxGeometry x='$($x-24)' y='$($y-17)' width='48' height='34' as='geometry'/></mxCell>")}
-    $ny=$m.height-160;foreach($note in $m.notes){$g.DrawString($note,$small,[Drawing.Brushes]::Black,35,([single]$ny));[void]$svg.AppendLine("<text x='35' y='$($ny+22)' font-size='21'>$(Esc $note)</text>");$ny+=32}
+    $ny=$m.height-160;$ni=0;foreach($note in $m.notes){$g.DrawString($note,$small,[Drawing.Brushes]::Black,35,([single]$ny));[void]$svg.AppendLine("<text x='35' y='$($ny+22)' font-size='21'>$(Esc $note)</text>");[void]$cells.AppendLine("<mxCell id='note_$ni' value='$(Esc $note)' style='text;html=0;align=left;fontSize=21;fontColor=#000000;' vertex='1' parent='1'><mxGeometry x='35' y='$ny' width='$($m.width-70)' height='32' as='geometry'/></mxCell>");$ny+=32;$ni++}
     [void]$svg.AppendLine('</g></svg>')
     $drawio="<mxfile host='app.diagrams.net'><diagram name='$(Esc $m.title)' id='$($m.name)'><mxGraphModel page='1' pageWidth='$($m.width)' pageHeight='$($m.height)'><root>$cells</root></mxGraphModel></diagram></mxfile>"
     $base=Join-Path $PSScriptRoot $m.name;$utf8=[Text.UTF8Encoding]::new($false);[IO.File]::WriteAllText(($base+'.svg'),$svg.ToString(),$utf8);[IO.File]::WriteAllText(($base+'.drawio'),$drawio,$utf8);$bmp.Save(($base+'.png'),[Drawing.Imaging.ImageFormat]::Png)
