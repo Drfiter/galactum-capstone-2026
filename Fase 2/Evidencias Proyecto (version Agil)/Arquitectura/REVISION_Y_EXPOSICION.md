@@ -12,6 +12,14 @@ La política se aplica solo al proceso de ese comando. El generador transforma c
 
 Las tres representaciones incluyen los mismos nodos, rutas de flechas, IDs, títulos y notas. Las fuentes diagrams.net permiten editar cajas, textos y trazados; los extremos se conservan como coordenadas explícitas. La tipografía puede variar ligeramente entre renderizadores. GitHub muestra SVG/PNG; no necesita ejecutar el generador.
 
+Para regenerar el Word desde los Markdown y los PNG publicados:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\Generar_Word.ps1"
+```
+
+La edición conserva paginación por secciones; después de cambios de contenido se debe volver a abrir y revisar en Word. La [revisión final](REGISTRO_REVISION.md) registra doce páginas renderizadas nativamente y dos figuras coincidentes con las exportaciones.
+
 ## Guion para explicar los diagramas
 
 1. La Vista Lógica responde qué responsabilidades existen. El Diagrama de Componentes identifica qué módulos las implementan. Docker responde dónde se ejecutan.
