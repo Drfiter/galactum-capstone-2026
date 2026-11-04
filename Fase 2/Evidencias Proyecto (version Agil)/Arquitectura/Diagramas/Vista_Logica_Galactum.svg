@@ -1,0 +1,51 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='1000' viewBox='0 0 1600 1000'><rect width='100%' height='100%' fill='white'/><defs><marker id='arrow' markerWidth='12' markerHeight='12' refX='10' refY='5' orient='auto-start-reverse'><path d='M 1 1 L 10 5 L 1 9' fill='none' stroke='black' stroke-width='1.4'/></marker></defs><g font-family='Arial, sans-serif' fill='black'>
+<text x='35' y='57' font-size='32' font-weight='bold'>Galactum MVP v0.12 — Vista Lógica</text>
+<rect x='30' y='100' width='420' height='700' fill='none' stroke='black' stroke-width='2'/><text x='42' y='130' font-size='21'>CLIENTE · presentación y réplica</text>
+<rect x='500' y='100' width='1070' height='700' fill='none' stroke='black' stroke-width='2'/><text x='512' y='130' font-size='21'>AUTORIDAD · funciones del servidor y sus datos</text>
+<polyline points='240,300 240,450' fill='none' stroke='black' stroke-width='2'  marker-end='url(#arrow)' />
+<polyline points='410,510 475,510 475,230 550,230' fill='none' stroke='black' stroke-width='2'  marker-end='url(#arrow)' marker-start='url(#arrow)'/>
+<polyline points='890,230 1180,230' fill='none' stroke='black' stroke-width='2'  marker-end='url(#arrow)' />
+<polyline points='720,300 720,450' fill='none' stroke='black' stroke-width='2'  marker-end='url(#arrow)' />
+<polyline points='890,480 1050,480 1050,280 1180,280' fill='none' stroke='black' stroke-width='2'  marker-end='url(#arrow)' />
+<polyline points='890,550 1180,550' fill='none' stroke='black' stroke-width='2'  marker-end='url(#arrow)' />
+<polyline points='550,270 520,270 520,715 550,715' fill='none' stroke='black' stroke-width='2'  marker-end='url(#arrow)' />
+<polyline points='1520,230 1550,230 1550,715 1520,715' fill='none' stroke='black' stroke-width='2'  marker-end='url(#arrow)' />
+<polyline points='1350,590 1350,660' fill='none' stroke='black' stroke-width='2'  marker-end='url(#arrow)' />
+<rect x='70' y='160' width='340' height='140' fill='white' stroke='black' stroke-width='2'/>
+<text x='240' y='223' font-size='25' text-anchor='middle'>Presentación</text>
+<text x='240' y='253' font-size='25' text-anchor='middle'>e interacción</text>
+<rect x='70' y='450' width='340' height='160' fill='white' stroke='black' stroke-width='2'/>
+<text x='240' y='523' font-size='25' text-anchor='middle'>Comunicación</text>
+<text x='240' y='553' font-size='25' text-anchor='middle'>y réplica visible</text>
+<rect x='550' y='160' width='340' height='140' fill='white' stroke='black' stroke-width='2'/>
+<text x='720' y='223' font-size='25' text-anchor='middle'>Orquestación</text>
+<text x='720' y='253' font-size='25' text-anchor='middle'>autoritativa</text>
+<rect x='1180' y='160' width='340' height='140' fill='white' stroke='black' stroke-width='2'/>
+<text x='1350' y='223' font-size='25' text-anchor='middle'>Mundo y entidades</text>
+<text x='1350' y='253' font-size='25' text-anchor='middle'>Consultas espaciales / AOI</text>
+<rect x='550' y='450' width='340' height='140' fill='white' stroke='black' stroke-width='2'/>
+<text x='720' y='513' font-size='25' text-anchor='middle'>Flotas y llegadas</text>
+<text x='720' y='543' font-size='25' text-anchor='middle'>Minería y retorno</text>
+<rect x='1180' y='450' width='340' height='140' fill='white' stroke='black' stroke-width='2'/>
+<text x='1350' y='513' font-size='25' text-anchor='middle'>Resolución</text>
+<text x='1350' y='543' font-size='25' text-anchor='middle'>de combate</text>
+<rect x='550' y='660' width='340' height='110' fill='white' stroke='black' stroke-width='2'/>
+<text x='720' y='708' font-size='25' text-anchor='middle'>Persistencia JSON</text>
+<text x='720' y='738' font-size='25' text-anchor='middle'>Responsabilidad del servidor</text>
+<rect x='1180' y='660' width='340' height='110' fill='white' stroke='black' stroke-width='2'/>
+<text x='1350' y='708' font-size='25' text-anchor='middle'>Configuración</text>
+<text x='1350' y='738' font-size='25' text-anchor='middle'>y balance JSON</text>
+<rect x='241' y='363' width='48' height='34' fill='white'/><text x='265' y='387' font-size='21' text-anchor='middle'>L1</text>
+<rect x='451' y='348' width='48' height='34' fill='white'/><text x='475' y='372' font-size='21' text-anchor='middle'>L2</text>
+<rect x='1006' y='196' width='48' height='34' fill='white'/><text x='1030' y='220' font-size='21' text-anchor='middle'>L3</text>
+<rect x='721' y='363' width='48' height='34' fill='white'/><text x='745' y='387' font-size='21' text-anchor='middle'>L4</text>
+<rect x='1053' y='358' width='48' height='34' fill='white'/><text x='1077' y='382' font-size='21' text-anchor='middle'>L5</text>
+<rect x='1006' y='516' width='48' height='34' fill='white'/><text x='1030' y='540' font-size='21' text-anchor='middle'>L6</text>
+<rect x='496' y='603' width='48' height='34' fill='white'/><text x='520' y='627' font-size='21' text-anchor='middle'>L7</text>
+<rect x='1521' y='603' width='48' height='34' fill='white'/><text x='1545' y='627' font-size='21' text-anchor='middle'>L8</text>
+<rect x='1356' y='613' width='48' height='34' fill='white'/><text x='1380' y='637' font-size='21' text-anchor='middle'>L9</text>
+<text x='35' y='862' font-size='21'>Flechas: uso o solicitud funcional. L2: intercambio bidireccional JSON / WebSocket.</text>
+<text x='35' y='894' font-size='21'>L1–L9: relaciones explicadas en Vista_Logica_Galactum.md. No son pasos de una secuencia.</text>
+<text x='35' y='926' font-size='21'>Persistencia pertenece al servidor. Minería pertenece a flotas. Docker se explica por separado.</text>
+<text x='35' y='958' font-size='21'>Fuentes: DIAGNOSTICO_Y_FUENTES.md, S5–S9. Corte documental: Fase 2, noviembre de 2026.</text>
+</g></svg>
