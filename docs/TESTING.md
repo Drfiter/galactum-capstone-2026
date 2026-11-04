@@ -21,3 +21,9 @@ Una prueba se considera ejecutada solamente cuando existe evidencia del comando 
 
 ## Pendiente
 Crear un runner E2E específico para M2 y conservar M0/M1 como evidencia histórica.
+
+## Alcance del complemento de arquitectura — Fase 2
+
+La pendiente M2 anterior pertenece al registro histórico. Para MVP v0.12 se dispone de documentación del recorrido minero/PvE y de [stop/start Docker](../Fase%202/Evidencias%20Proyecto%20%28version%20Agil%29/REGISTRO_VERIFICACION_DOCKER.md). No son resultados nuevos de suites.
+
+La tarea de arquitectura verifica coherencia de diagramas, enlaces, fuentes/exportaciones y Word. No ejecuta el juego, smoke, harness, carga ni Android. La existencia de semilla, request_id o escenas de prueba no certifica determinismo, idempotencia ni aprobación de pruebas. Véase [revisión documental](../Fase%202/Evidencias%20Proyecto%20%28version%20Agil%29/Arquitectura/REVISION_Y_EXPOSICION.md).

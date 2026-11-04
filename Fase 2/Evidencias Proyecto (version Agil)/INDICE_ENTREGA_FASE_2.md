@@ -24,3 +24,13 @@ Las capturas están incorporadas en los Word. Esta entrega contiene documentaci�
 ## Revisión antes de evaluación
 
 El contenido y la estructura XML de los Word fueron comprobados. Sigue pendiente revisar visualmente la paginación en Word, así como confirmar con el equipo los campos académicos que requieran validación. Las traducciones cubren exclusivamente las guías 2.4 y 2.6.
+
+## Arquitectura — complemento del 4 de noviembre
+
+- [Vista Lógica](Arquitectura/Vista_Logica_Galactum.md), [SVG](Arquitectura/Diagramas/Vista_Logica_Galactum.svg), [PNG](Arquitectura/Diagramas/Vista_Logica_Galactum.png) y [editable diagrams.net](Arquitectura/Diagramas/Vista_Logica_Galactum.drawio).
+- [Diagrama de Componentes](Arquitectura/Diagrama_Componentes_Galactum.md), [SVG](Arquitectura/Diagramas/Diagrama_Componentes_Galactum.svg), [PNG](Arquitectura/Diagramas/Diagrama_Componentes_Galactum.png) y [editable diagrams.net](Arquitectura/Diagramas/Diagrama_Componentes_Galactum.drawio).
+- [Word de arquitectura consolidado](Arquitectura/Arquitectura_Galactum_Vista_Logica_y_Componentes.docx).
+- [Diagnóstico y fuentes](Arquitectura/DIAGNOSTICO_Y_FUENTES.md), [Docker](Arquitectura/CORRESPONDENCIA_DOCKER.md) y [guía de exposición](Arquitectura/REVISION_Y_EXPOSICION.md).
+- [Aporte individual de Juan Castro](../Evidencias%20Individuales/Juan_Castro_Arquitectura_Fase2.md).
+
+El registro de revisión de arquitectura detalla sus comprobaciones; no extiende automáticamente esa validación visual a los Word anteriores. La configuración Docker original sigue pendiente de cotejo directo. No se ejecutaron pruebas nuevas del juego para este complemento.
