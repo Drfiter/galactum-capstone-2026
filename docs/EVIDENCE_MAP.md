@@ -1,5 +1,23 @@
 # Mapa de evidencias
 
+## Evidencias vigentes — 10 de noviembre de 2026
+
+| Fase | Tipo | Evidencia |
+|---|---|---|
+| 2 | Proyecto ágil | [Sprint Backlog](../Fase%202/Evidencias%20Proyecto%20%28version%20Agil%29/Documento%2003%20-%20Sprint%20Backlog.md), reconstruido desde el historial del repositorio técnico |
+| 3 | Proyecto | [Informe de correcciones del feedback (PDF)](../Fase%203/Evidencias%20Proyecto/Informe_correcciones_feedback_2026-11-09.pdf) |
+| 3 | Proyecto | [Estado frente al feedback (PDF)](../Fase%203/Evidencias%20Proyecto/Estado_feedback_2026-11-09.pdf) |
+| 3 | Proyecto | [Informe de las 9 funcionalidades agregadas (PDF)](../Fase%203/Evidencias%20Proyecto/Informe_funcionalidades_feedback_2026-11-10.pdf) |
+| 3 | Proyecto | [Video de demo del juego (MP4, 1:33)](../Fase%203/Evidencias%20Proyecto/Galactum_demo_MVP_v0.12_2026-11-10.mp4) |
+| 3 | Proyecto | [Verificación Docker del 10/11](../Fase%203/Evidencias%20Proyecto/REGISTRO_VERIFICACION_DOCKER_2026-11-10.md) con capturas del navegador |
+| 3 | Pruebas | [Salidas completas de las suites y del arnés de balance](./pruebas/) |
+
+---
+
+## Registro histórico
+
+Lo que sigue se conserva sin cambios como registro de los cortes anteriores.
+
 | Fase | Tipo | Evidencia |
 |---|---|---|
 | 1 | Grupal | Definición pública del Proyecto APT |
@@ -15,7 +33,7 @@
 | 2 | Proyecto ágil | Documento de Diseño |
 | 3 | Proyecto | Cierre, métricas y presentación final — pendiente |
 
-## Complemento MVP v0.12 — Fase 2
+### Complemento MVP v0.12 — Fase 2
 
 | Evidencia | Alcance |
 | --- | --- |
