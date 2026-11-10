@@ -1,5 +1,7 @@
 # Operación local de Galactum con Docker
 
+> **Actualización 10/11/2026.** La configuración Docker quedó versionada en el repositorio técnico y el servidor dedicado ahora exige cuenta. Pasos vigentes: en `mvp-v0.12/`, `copy .env.example .env` (completar `GALACTUM_JWT_SECRET`), `docker compose up -d --build`, abrir http://localhost:8080 → *Servidor dedicado* → *Crear cuenta* o *Entrar*. Verificación completa: [Registro Docker del 10/11](../../Fase%203/Evidencias%20Proyecto/REGISTRO_VERIFICACION_DOCKER_2026-11-10.md).
+
 ## Alcance
 
 El despliegue del MVP v0.12 comprende un servidor Godot 4.6.2 sin interfaz gráfica y una exportación web servida por Nginx. Chrome ejecuta el cliente WebAssembly/WebGL. Este repositorio académico conserva el registro documental; los comandos se ejecutan en la copia autorizada del repositorio técnico que contiene `compose.yaml`.
@@ -38,4 +40,4 @@ El volumen nombrado `galactum_galactum-data` está montado en `/data`. El servid
 | server | galactum-server:0.12 | Simulación y WebSocket, Godot headless |
 | web | galactum-web:0.12 | Distribución web con Nginx |
 
-Los archivos técnicos que implementan este despliegue son `compose.yaml`, `docker/Dockerfile`, `docker/nginx.conf` y `docker/healthcheck.py`. No se adjuntan a este repositorio académico. Consultar el Word de dockerización para las capturas de la ejecución real.
+Los archivos técnicos que implementan este despliegue son `compose.yaml`, `docker/Dockerfile`, `docker/nginx.conf` y `docker/healthcheck.py`. Desde el 10/11/2026 están versionados en el repositorio técnico (carpeta `mvp-v0.12/`, commit `aa375ad`); antes solo existían en la copia local usada el 3/11. Consultar el Word de dockerización para las capturas de la ejecución del 3/11.
