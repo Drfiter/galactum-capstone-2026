@@ -1,0 +1,28 @@
+# Galactum MVP v0.12 · commit 4449471 · 2026-11-10 08:29 (Chile)
+# godot --headless --path mvp-v0.12 res://tests/run_tests.tscn
+== Galactum: suite de pruebas ==
+  [OK]   determinismo: mismo input + seed => mismo resultado
+  [OK]   seed distinto produce variación controlada
+  [OK]   propiedad: el total de tropas nunca crece (300 combates aleatorios)
+  [OK]   Infantería > Drones (+30%)
+  [OK]   Drones > Pilotos (+30%)
+  [OK]   Pilotos > Infantería (+30%)
+  [OK]   Escudos absorben el primer daño (pilotos perdidos 36 < 60)
+  [OK]   Cañoneros destruyen el Escudo Perimetral más rápido (tras R1: 300 < 2280)
+  [OK]   100 de Infantería abaten una xenoforma N1 débil a lo físico
+  [OK]   una flota pequeña solo daña a una N5 (HP persistente)
+  [OK]   la debilidad de la especie aumenta el daño (+50%)
+  [OK]   apply rechaza saldos negativos
+  [OK]   rollback: ningún saldo cambia si la operación falla
+  [OK]   idempotencia: la misma clave no abona dos veces
+  [OK]   heridos hasta la capacidad de la Bahía Médica
+  [OK]   bajas mortales: 80% Criosantuario / 20% perdidas
+  [OK]   producción lazy: 1 minuto de Fábrica Nv1 = 40 Mineral
+  [OK]   la producción se limita a su almacenamiento
+  [OK]   formato en inglés: 1500 => 1,500
+  [OK]   formato en inglés: negativos con coma de miles
+  [OK]   formato en inglés: 1500 => 1.5K
+  [OK]   formato en español: 1500 => 1.500
+  [OK]   formato en español: 1500 => 1,5K
+  [OK]   formato en español: millones con coma decimal
+== 24 OK, 0 FALLIDAS ==

@@ -1,0 +1,36 @@
+# Galactum MVP v0.12 · commit 4449471 · 2026-11-10 08:30 (Chile)
+# godot --headless --path mvp-v0.12 res://tests/feedback_checks.tscn
+== Galactum: pruebas del feedback ==
+SYSTEM_GENERATED s15 (Aquila) entities=3372
+SSS_READY protocol=galactum-mvp-1 systems=16 entities=3372 players=72
+  [OK]   la tarjeta de la xenoforma muestra el botón Cazar
+  [OK]   el botón sigue vivo tras la actualización
+  [OK]   soltar sobre Cazar abre el envío de flota
+  [OK]   la barra inferior sigue oculta justo después de cerrar la tarjeta
+  [OK]   la barra inferior vuelve a aparecer después
+  [OK]   la Astronave inicia el viaje
+  [OK]   la Astronave llegó a otra posición ((94.0, 388.0) -> (82.0, 396.0))
+  [OK]   el indicador muestra la nueva posición (X:82  Y:396, nave en (82.0, 396.0))
+  [OK]   sin nombres internos de estado en textos visibles []
+  cubierta: etiquetas=[P: (321.9983, 305.8859), S: (946.0, 758.226)]  zona libre: y 172..1198, x desde 310
+  [OK]   ninguna etiqueta queda bajo la barra de colas
+  [OK]   ninguna etiqueta queda bajo la barra inferior
+  [OK]   ninguna etiqueta queda bajo la tarjeta de misiones
+  chat: 60 mensajes de sistema con comandantes, 0 sin la etiqueta [VGA]
+  [OK]   hubo combates de la alianza durante la simulación
+  [OK]   todos los combates del chat muestran la etiqueta de tu alianza
+  [OK]   ningún comandante se llama como un tripulante []
+  [OK]   9 efectos de sonido cargados
+  [OK]   música de 32 s cargada
+  [OK]   la música suena durante la partida
+  [OK]   el Menú tiene el interruptor de Efectos
+  [OK]   los botones hacen clic
+  [OK]   el interruptor de Música la apaga
+  [OK]   la preferencia de Música se guarda
+  [OK]   el interruptor de Música la vuelve a encender
+  [OK]   con Efectos apagados no suena nada
+== 24 OK, 0 FALLIDAS ==
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+     at: cleanup (core/object/object.cpp:2641)
+ERROR: 3 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:810)

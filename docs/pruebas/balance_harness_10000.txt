@@ -1,0 +1,22 @@
+# Galactum MVP v0.12 · commit 4449471 · 2026-11-10 08:31 (Chile)
+# godot --headless --path mvp-v0.12 res://tools/balance_harness.tscn -- --n=10000
+  N1 infantry  > drones     winrate 68.5%  OK
+  N1 drones    > pilots     winrate 67.0%  OK
+  N1 pilots    > infantry   winrate 62.6%  OK
+  N2 infantry  > drones     winrate 68.5%  OK
+  N2 drones    > pilots     winrate 67.9%  OK
+  N2 pilots    > infantry   winrate 62.2%  OK
+  N3 infantry  > drones     winrate 70.2%  OK
+  N3 drones    > pilots     winrate 63.8%  OK
+  N3 pilots    > infantry   winrate 65.7%  OK
+  N4 infantry  > drones     winrate 68.2%  OK
+  N4 drones    > pilots     winrate 67.9%  OK
+  N4 pilots    > infantry   winrate 61.9%  OK
+  N5 infantry  > drones     winrate 68.1%  OK
+  N5 drones    > pilots     winrate 68.1%  OK
+  N5 pilots    > infantry   winrate 62.4%  OK
+  gunners   vs shields   winrate 100.0%  (informativo)
+  infantry  vs gunners   winrate 100.0%  (informativo)
+RESULTADO: BALANCE OK
+
+[exited with code 0]

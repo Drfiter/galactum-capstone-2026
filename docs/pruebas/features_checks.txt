@@ -1,0 +1,224 @@
+# Galactum MVP v0.12 · commit 4449471 · 2026-11-10 08:30 (Chile)
+# godot --headless --path mvp-v0.12 res://tests/features_checks.tscn
+== Galactum: pruebas de funcionalidades ==
+SYSTEM_GENERATED s15 (Aquila) entities=3372
+SSS_READY protocol=galactum-mvp-1 systems=16 entities=3372 players=72
+ -- Fase 1: Tripulantes en flotas
+  [OK]   doble empleo: un tripulante de sala no puede embarcar
+  [OK]   máximo 5 tripulantes por flota
+  [OK]   una flota sale con 3 tripulantes 
+  [OK]   la flota lleva a sus tripulantes
+  [OK]   el ataque de la flota incluye el bono de sus tripulantes
+  [OK]   doble empleo: un tripulante no puede ir en dos flotas
+  [OK]   doble empleo: un tripulante en flota no puede trabajar en una sala
+  [OK]   el informe de caza muestra la EXP de los tripulantes
+  [OK]   los tripulantes ganan EXP al cazar
+  [OK]   con EXP suficiente suben de nivel (nivel 18)
+  [OK]   al subir de nivel cambian de rango (Cabo)
+  [OK]   subir de grado requiere Insignias
+  [OK]   con Insignias sube a grado 2
+  [OK]   el grado aumenta la pasiva del tripulante
+  [OK]   se descuentan 20 Insignias
+  [OK]   la vista del cliente incluye nivel, rango, grado y EXP
+ -- Fase 2: Comandante
+  [OK]   el Comandante empieza en nivel 1 con 1 punto de Protocolo
+  [OK]   aprende un Protocolo de nivel 0 (Ofensiva Coordinada)
+  [OK]   el Protocolo suma +2% de ataque al combate
+  [OK]   sin puntos no se puede aprender más
+  [OK]   con EXP sube 27 niveles y gana 27 puntos
+  [OK]   un Protocolo de nivel 1 exige 5 puntos en su rama
+  [OK]   con 5 puntos en Combate se desbloquea el nivel 1
+  [OK]   Optimización Industrial aumenta la producción
+  [OK]   al perder la nave con muchas bajas el Comandante puede ser capturado
+  [OK]   mientras está capturado sus Protocolos no aplican
+  [OK]   el ataque vuelve al valor sin Protocolos
+  [OK]   con pocas bajas no hay captura
+  [OK]   el rescate cuesta Créditos
+  [OK]   pagar el rescate libera al Comandante
+  [OK]   el captor cobra el rescate
+  [OK]   al volver, sus Protocolos aplican otra vez
+  [OK]   cumplida la condena vuelve solo
+  [OK]   capturar al Comandante de un bot lo deja como prisionero
+  [OK]   el bot paga el rescate y lo cobras
+  [OK]   reiniciar Protocolos devuelve los puntos (cuesta Materia Oscura)
+  [OK]   la vista del cliente incluye nivel, puntos, captura y prisioneros
+ -- Fase 3: Armería y equipamiento
+  [OK]   el catálogo tiene 150 materiales
+  [OK]   el catálogo tiene 90 equipos
+  [OK]   cazar una xenoforma N3 suelta su material de calidad III
+  [OK]   minar suelta material de forja
+  [OK]   sin Armería no se puede forjar
+  [OK]   forjar exige materiales y Créditos
+  [OK]   con los materiales se forja el Cañón Vanguardia
+  [OK]   un equipo de escalón 5 exige una Armería de nivel alto
+  [OK]   equiparlo suma +2% de ataque
+  [OK]   mejorarlo lo sube a nivel 2
+  [OK]   el nivel aumenta su bono
+  [OK]   tres piezas del conjunto Vanguardia equipadas
+  [OK]   el bono de conjunto de 3 piezas suma ataque extra
+  [OK]   se puede quitar una pieza
+  [OK]   refinar: 8 de calidad I dan 2 de calidad II
+  [OK]   la vista del cliente incluye equipo, materiales y escalón máximo
+ -- Fase 4: Alianzas
+  [OK]   cada alianza tiene un líder R5
+  [OK]   buscar alianzas por etiqueta o nombre
+  [OK]   crear una alianza cuesta Créditos y Materia Oscura
+  [OK]   no se puede repetir una etiqueta
+  [OK]   crear la alianza [TST]: quedas como líder R5
+  [OK]   en modo solicitud, unirse deja una solicitud pendiente
+  [OK]   el líder acepta la solicitud y entra como R1
+  [OK]   el líder asciende a R3
+  [OK]   no se puede asignar un rango igual o mayor al propio
+  [OK]   permisos por rango: R3 abre Asedios pero no expulsa
+  [OK]   el líder debe transferir el liderazgo antes de salir
+  [OK]   donar a la Tesorería da Bonos de Alianza
+  [OK]   un R3 no puede retirar de la Tesorería
+  [OK]   el líder retira y queda en el registro de auditoría
+  [OK]   la Tienda de Alianza vende con Bonos
+  [OK]   el líder expulsa a un miembro
+  [OK]   al salir el último miembro la alianza se disuelve
+  [OK]   volver a unirse a [VGA] (el líder bot acepta la solicitud)
+  [OK]   Ayuda Mutua: ayudar a los aliados da Bonos
+ -- Fase 4: Asedio y refuerzos
+  [OK]   un R1 no puede abrir un Asedio
+  [OK]   un R4 abre un Asedio contra [ORI] Quaia-9
+  [OK]   un aliado se suma al Asedio con sus tropas
+  [OK]   al terminar la espera sale la flota conjunta (3 participantes)
+  [OK]   la flota del Asedio usa los bonos del líder (herencia de boosts)
+  [OK]   la flota del Asedio combate y vuelve
+  [OK]   el informe del Asedio lista a los participantes (los humanos reciben copia)
+  [OK]   los supervivientes vuelven a cada participante (el líder recupera su parte)
+  [OK]   participar en el Asedio da Bonos
+  [OK]   bajas y botín se reparten según el aporte (30/70)
+  [OK]   enviar refuerzos a la nave de un aliado
+  [OK]   los refuerzos quedan estacionados en la nave aliada
+  [OK]   los refuerzos defienden junto a las tropas del aliado
+  [OK]   se pueden retirar los refuerzos
+  [OK]   la vista del cliente incluye Asedios, refuerzos, Tesorería y permisos
+ -- Fase 5: Progresión
+  [OK]   las salas llegan a nivel 25
+  [OK]   el costo del Puente sigue creciendo hasta el 25 con curva suave (15120 → 181020)
+  [OK]   las flotas simultáneas tienen tope (6)
+  [OK]   24 salas construibles y ninguna de relleno
+  [OK]   la sala Muelle de Atraque se puede construir
+  [OK]   la sala Esclusa Ceremonial se puede construir
+  [OK]   la sala Bahía de Carga se puede construir
+  [OK]   la sala Puerto de Comercio se puede construir
+  [OK]   la sala Celda de Contención se puede construir
+  [OK]   la sala Bahía de Ocultación se puede construir
+  [OK]   la sala Cámara de Incubación se puede construir
+  [OK]   la sala Fundición Estelar se puede construir
+  [OK]   el Muelle de Atraque aumenta la capacidad de refuerzos
+  [OK]   la Bahía de Carga protege más recursos en la Bóveda
+  [OK]   vender requiere el Puerto de Comercio
+  [OK]   el Puerto de Comercio vende elementos por Créditos
+  [OK]   las 5 fuerzas tienen niveles N1 a N5
+  [OK]   entrenar N3 requiere el Protocolo de Fuerzas N3
+  [OK]   árbol de investigación de 5 ramas y 30 tecnologías
+  [OK]   Nanomedicina exige Blindaje Ablativo Nv 2 (prerrequisito)
+  [OK]   con el prerrequisito se puede investigar
+  [OK]   Automatización Industrial aumenta la producción
+  [OK]   la formación Asalto se desbloquea investigando
+  [OK]   la formación Cacería suma +15%% de daño contra Xenoformas a la flota
+ -- Fase 6: LiveOps
+  [OK]   cazar da puntos de Pase de Expedición
+  [OK]   300 puntos por nivel: 1.800 puntos = nivel 6
+  [OK]   reclamar el nivel 5 de la pista gratuita
+  [OK]   no se puede reclamar dos veces
+  [OK]   un nivel no alcanzado está bloqueado
+  [OK]   la pista premium exige comprar el Pase
+  [OK]   comprar el Pase premium (compra simulada con MO)
+  [OK]   el premium desbloquea retroactivamente los niveles ya alcanzados
+  [OK]   reclamar los puntos diarios de Licencia
+  [OK]   una vez por día
+  [OK]   la Licencia sube de nivel (8) y en el 6 activa la auto-batalla
+  [OK]   los beneficios de la Licencia entran a los modificadores
+  [OK]   se abre un Evento de Singularidad (Singularidad: Choque de Flotas)
+  [OK]   las actividades suman puntos a la Singularidad activa
+  [OK]   reclamar el primer hito de la Singularidad
+  [OK]   la Singularidad tiene clasificación
+  [OK]   el Festival suma el aporte del jugador y de los aliados
+  [OK]   reclamar un hito colectivo del Festival de la Flota
+  [OK]   la vista del cliente incluye Pase, Licencia, Singularidad y Festival
+  [OK]   hay momentos sin Evento de Singularidad activo
+  [OK]   sin Singularidad activa, cazar suma al Pase y al Festival (antes se cortaba)
+ -- Fase 7: Expediciones
+  [OK]   la campaña tiene 6 capítulos de 8 etapas
+  [OK]   la etapa 1-2 exige ganar la 1-1
+  [OK]   sin tripulantes no se puede combatir
+  [OK]   máximo 5 tripulantes por equipo
+  [OK]   la simulación es determinista con la misma semilla
+  [OK]   el modo Élite tiene enemigos más fuertes
+  [OK]   el equipo inicial gana la etapa 1-1 (3★)
+  [OK]   el resultado trae el registro del combate para repetirlo en el cliente
+  [OK]   combatir gasta Combustible de Expedición
+  [OK]   la primera victoria da Insignias de Mando
+  [OK]   los tripulantes del equipo ganan EXP
+  [OK]   la respuesta trae la primera victoria, el premio y la EXP de los tripulantes
+  [OK]   repetir la etapa da el premio reducido
+  [OK]   un tripulante que viaja en una flota no puede ir a la Expedición
+  [OK]   el barrido exige Licencia de Comandante 6
+  [OK]   barrido x5 con Licencia 6 (gasta 30 de Combustible)
+  [OK]   solo se barren etapas con 3 estrellas
+  [OK]   el Élite exige terminar el capítulo en Normal
+  [OK]   el Élite tiene 3 intentos diarios
+  [OK]   sin intentos Élite no se puede combatir
+  [OK]   cofre de 24 estrellas del capítulo 1
+  [OK]   un cofre se abre una sola vez
+  [OK]   el capítulo 2 depende del nivel del Puente
+  [OK]   con Puente 5 y el capítulo 1 terminado se abre el capítulo 2
+  [OK]   el Combustible se regenera 1 cada 6 minutos
+  [OK]   recargar Combustible con Materia Oscura
+  [OK]   la vista del cliente incluye las Expediciones
+ -- Fase 8: Endgame
+  [OK]   el sistema tiene 3 Colmenas Xeno
+  [OK]   hay 4 Plataformas Orbitales (con la Ciudadela) alrededor del Portal
+  [OK]   al empezar, la Ciudadela está en manos de una alianza bot
+  [OK]   una Colmena no se puede cazar en solitario
+  [OK]   abrir un Asedio contra una Colmena Xeno
+  [OK]   el Asedio daña la Colmena y el daño persiste
+  [OK]   los participantes reciben premio según su aporte
+  [OK]   cada participante recibe el informe del Asedio a la Colmena
+  [OK]   una Colmena sin vida desaparece
+  [OK]   y queda pendiente su reaparición
+  [OK]   la Colmena reaparece a los 20 minutos
+  [OK]   abrir un Asedio contra una Plataforma Orbital
+  [OK]   ganar el Asedio conquista la plataforma para la alianza
+  [OK]   la plataforma queda protegida tras la conquista
+  [OK]   los miembros reciben el bono de la plataforma (attack)
+  [OK]   el bono entra al sistema unificado de modificadores
+  [OK]   no se puede atacar una plataforma propia
+  [OK]   sin la Ciudadela no se otorgan títulos
+  [OK]   el líder de la Ciudadela se otorga Gran Almirante (+ataque)
+  [OK]   y puede imponer un título negativo a un rival
+  [OK]   cada título tiene un tiempo de espera para reasignarse
+  [OK]   los títulos vencen a las 24 h
+  [OK]   iniciar una Operación de Rescate en el Criosantuario
+  [OK]   solo una Operación de Rescate a la vez
+  [OK]   la Operación de Rescate recupera el 30% de la criostasis
+  [OK]   la vista del cliente incluye Plataformas, Colmenas y títulos
+ -- Fase 9: Cuentas (registro, login, JWT)
+SYSTEM_GENERATED s15 (Aquila) entities=3372
+SSS_READY protocol=galactum-mvp-1 systems=16 entities=3372 players=72
+  [OK]   el servidor dedicado rechaza el hello sin token
+  [OK]   usuario demasiado corto
+  [OK]   contraseña de menos de 8 caracteres
+  [OK]   registro: devuelve JWT de acceso y token de renovación
+  [OK]   la contraseña se guarda solo como hash PBKDF2 con sal
+  [OK]   el token de renovación se guarda solo como hash
+  [OK]   no se repiten nombres de usuario (sin distinguir mayúsculas)
+  [OK]   el JWT lleva el player_id (sub) y vence (exp)
+  [OK]   un JWT alterado no pasa la verificación de firma
+  [OK]   el hello con token falso se rechaza
+  [OK]   el hello con JWT válido entra con el comandante de la cuenta
+  [OK]   la cuenta crea su comandante con el nombre de usuario
+  [OK]   login con contraseña incorrecta
+  [OK]   un usuario inexistente da el mismo error (no revela cuentas)
+  [OK]   tras 5 intentos fallidos la cuenta se bloquea 5 minutos
+  [OK]   login correcto tras el bloqueo
+  [OK]   el JWT de acceso sigue vigente a los 5 minutos
+  [OK]   el JWT de acceso vence a los 15 minutos
+  [OK]   renovar la sesión entrega tokens nuevos (rotación)
+  [OK]   un token de renovación ya usado no sirve
+  [OK]   cerrar sesión revoca el token de renovación
+== 206 OK, 0 FALLIDAS ==

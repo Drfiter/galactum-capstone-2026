@@ -1,0 +1,77 @@
+# Galactum MVP v0.12 · commit 4449471 · 2026-11-10 08:29 (Chile)
+# godot --headless --path mvp-v0.12 res://tests/server_smoke.tscn
+SYSTEM_GENERATED s15 (Aquila) entities=3372
+SSS_READY protocol=galactum-mvp-1 systems=16 entities=3372 players=72
+world gen ms=60 entities=3372 players=72
+  ok  player created
+  ok  welcome sent
+  ok  map delta sent
+base at (244.0, 489.0) power=950
+  ok  collect ok { "ore": 80, "aminoacids": 48, "co2": 48, "food": 68, "oxygen": 68, "plasma": 6, "credits": 60 }
+  ok  asteroid near spawn
+  ok  gather march { "type": "ack", "request_id": "t783092561", "action": "march", "ok": true, "fleet_id": "flt_9db3fea0e9ed103c", "arrive_ts": 1794310315649 }
+  ok  gather fleet returned
+mined 420 of aluminium
+  ok  resources delivered
+  ok  xeno near spawn
+  ok  hunt march { "type": "ack", "request_id": "t3652498388", "action": "march", "ok": true, "fleet_id": "flt_08957525350b8291", "arrive_ts": 1794310438203 }
+  ok  hunt report
+hunt: Caza exitosa: Behemot Estelar N1 dmg=1500 wounded={ "drones_1": 1, "infantry_1": 1, "pilots_1": 1 }
+  ok  enemy near
+enemy [KRT] ZerixRex troops={ "infantry_1": 65, "drones_1": 57, "pilots_1": 82, "shields_1": 24, "gunners_1": 21 } power=2760
+  ok  scout march
+  ok  scout report
+scout precision=1 info keys=["precision", "power"]
+  ok  attack march { "type": "ack", "request_id": "t2256290003", "action": "march", "ok": true, "fleet_id": "flt_ccffb03d7c103b3d", "arrive_ts": 1794310580713 }
+  ok  attack report
+attack: Derrota contra [KRT] ZerixRex rounds=2 loot={  } att losses={ "drones_1": 20, "gunners_1": 20, "infantry_1": 40, "pilots_1": 20, "shields_1": 20 } def losses={  }
+wounded={ "drones_1": 13, "infantry_1": 25, "pilots_1": 13, "gunners_1": 12, "shields_1": 12 } cryo={ "drones_1": 6, "gunners_1": 6, "infantry_1": 12, "pilots_1": 6, "shields_1": 6 }
+  ok  train { "type": "ack", "request_id": "t4220391796", "action": "train", "ok": true }
+  ok  upgrade factory { "type": "ack", "request_id": "t1706506983", "action": "upgrade_room", "ok": true }
+  ok  research { "type": "ack", "request_id": "t2313094878", "action": "research", "ok": true }
+  ok  heal { "type": "ack", "request_id": "t1424561390", "action": "heal", "ok": true }
+  ok  help { "type": "ack", "request_id": "t2506539907", "action": "help", "ok": true }
+  ok  factory level 2
+  ok  tech done
+claim mission: ack { "credits": 200.0, "speedup_1m": 2.0 }
+relocate: error Ese punto está ocupado
+base now [244, 489] state ANCHORED
+raid: ack  incoming=1
+defense reports=1 -> Repeliste el ataque de [VOI] Cyron II
+  ok  escape jump [367, 324]
+  ok  escape jump moved far
+  ok  galaxy view
+  ok  upcoming system locked
+SYSTEM_GENERATED s14 (Vela) entities=3372
+jump to s14 ms=130
+  ok  interstellar jump 
+  ok  player moved system
+  ok  base left old system
+  ok  base in new system
+  ok  veteran blocked from newest system
+  ok  guild view
+guild points=1106 level=3 ranking=5
+  ok  mark target 
+target hits=4 hitters=["Draor Prime", "MorisRex", "Draara II", "CyrathNova"] AP=1883 goals=["hunt:43", "deliver:150445", "war:4"]
+  ok  allies hit marked target
+  ok  events view
+tournament=Torneo de Cazadores participants=147 burned=586.804410000001 resource=Fiebre de Kliptium
+  ok  tournament finished with history
+history: Torneo de Cazadores pool=500.0 burned=586.8 ratio=1.17 advice=lower winners=[{ "rank": 1, "name": "[VGA] SolosX", "points": 440 }, { "rank": 2, "name": "[VOI] Rynex Prime", "points": 430 }, { "rank": 3, "name": "[XEN] KelonRex", "points": 400 }]
+  ok  phase 2 room not built at start
+  ok  build cantina 
+  ok  cantina built
+  ok  free recruit [{ "id": "p37", "rarity": "common", "new": true, "stars": 1 }]
+  ok  recruit x10
+recruit x10: ["p11:r*", "p22:e*", "p19:r*", "p15:c*", "p43:e*", "p44:c*", "p34:r*", "p39:c*", "p07:e*", "p41:c"]
+  ok  crew assign
+crew_mods={ "attack": 0.03, "defense": 0.048 }
+  ok  build workshop 
+  ok  workshop exchange rate=5
+player_view bytes=16211 msgs total=3
+save ms=114 size=2426800
+Estado restaurado desde user://smoke_save.json
+  ok  load ok
+load ms=155
+after load tick ok; fleets=143
+FAILURES=0

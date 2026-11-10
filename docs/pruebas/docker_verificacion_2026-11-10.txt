@@ -1,0 +1,48 @@
+# Verificación Docker · Galactum MVP v0.12 · commit 4449471 · 2026-11-10 08:43 (Chile)
+# Linux, Docker Engine 29.9.2, Compose 5.6.1
+
+$ docker images (galactum)
+galactum-web:0.12  148MB
+galactum-server:0.12  460MB
+
+$ docker compose ps
+SERVICE   IMAGE                  STATUS                    PORTS
+server    galactum-server:0.12   Up 23 minutes (healthy)   127.0.0.1:9100->9100/tcp
+web       galactum-web:0.12      Up 23 minutes             127.0.0.1:8080->80/tcp
+
+$ docker compose logs server (extracto)
+server-1  | Estado restaurado desde user://galactum_server_save.json
+server-1  | SSS_READY protocol=galactum-mvp-1 systems=16 entities=3360 players=77
+server-1  | SSS WebSocket escuchando en el puerto 9100
+
+$ docker inspect healthcheck (server)
+healthy · último código 0
+
+$ curl http://127.0.0.1:8080/  y  /index.wasm
+index.html -> 200 text/html
+index.wasm -> 200 application/wasm 37695054 bytes
+
+$ docker volume ls (galactum)
+galactum_galactum-data
+-rw-r--r-- 1 galactum galactum 2009274 Nov 10 11:43 galactum_server_save.json
+
+## Cuentas a través de nginx (/ws) con el cliente de prueba (tests/ws_client_test.tscn)
+$ ws_client_test --name=Evidencia --pass=*** --register --url=ws://127.0.0.1:8080/ws
+[Evidencia] connected=true player_id=plr_8e0c37d48c7d670f
+[Evidencia] entities=129 humans_visible=["Evidencia", "NavegadorWeb"] power=950.0
+[Evidencia] march ok=true 
+$ ws_client_test --name=Evidencia --pass=*** --url=ws://127.0.0.1:8080/ws
+[Evidencia] error: Wrong username or password
+[Evidencia] connected=false player_id=
+$ ws_client_test --name=SinCuenta --url=ws://127.0.0.1:8080/ws
+[SinCuenta] error: Sign in: this server requires an account
+[SinCuenta] connected=false player_id=
+
+## Recreación de contenedores: docker compose down && docker compose up -d
+contenedores y red eliminados: 3
+server Up 30 seconds (healthy)
+web Up 25 seconds
+server-1  | Estado restaurado desde user://galactum_server_save.json
+$ ws_client_test --name=Evidencia --pass=*** --url=ws://127.0.0.1:8080/ws   (misma cuenta, tras recrear)
+[Evidencia] connected=true player_id=plr_8e0c37d48c7d670f
+[Evidencia] entities=134 humans_visible=["Evidencia", "NavegadorWeb"] power=950.0
