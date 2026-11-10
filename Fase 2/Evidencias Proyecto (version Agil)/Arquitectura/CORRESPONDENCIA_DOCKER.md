@@ -29,3 +29,7 @@ No acredita eliminación/recreación de contenedores, recuperación tras borrar 
 La copia técnica revisada permite comprobar lógica v0.12, arranque dedicado, JSON y puerto 9100. No incluye los cuatro archivos Docker citados en S7 ni la adaptación de conexión web al mismo origen. Es necesario registrar su ubicación y commit para cerrar esa comprobación directa. Hasta entonces, los detalles Docker anteriores se identifican como respaldados por documentación y capturas, no por inspección de configuración en esta tarea.
 
 [Fuentes S1–S9](DIAGNOSTICO_Y_FUENTES.md).
+
+## Actualización del 10 de noviembre
+
+La confirmación pendiente quedó resuelta: `compose.yaml`, `docker/Dockerfile`, `docker/nginx.conf` y `docker/healthcheck.py`, junto con la conexión web al mismo origen (`/ws`), están versionados en el repositorio técnico (carpeta `mvp-v0.12/`, commits `612a27a` y `aa375ad`). Se verificaron construcción, salud del servidor, cuentas a través de nginx, persistencia tras recrear los contenedores y el juego en el navegador: [registro del 10/11](../../../Fase%203/Evidencias%20Proyecto/REGISTRO_VERIFICACION_DOCKER_2026-11-10.md). El despliegue verificado mantiene los servicios, puertos, `/ws` y volumen descritos arriba; además, el servidor dedicado ahora exige cuenta (JWT).

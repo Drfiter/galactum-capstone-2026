@@ -12,6 +12,8 @@ La entrega documental de Fase 2 representa el MVP v0.12 en Godot 4.6.2. Los apar
 
 La Vista Lógica explica funciones; el Diagrama de Componentes identifica módulos y dependencias; Docker describe lugares de ejecución. Minería pertenece a flotas. Persistencia JSON pertenece al servidor. Catalog y los datos de balance se utilizan en los contextos que los necesitan. No se incorpora SQL ni un servicio por script.
 
+> **Actualización 10/11/2026:** la configuración Docker ya está versionada en el repositorio técnico (`mvp-v0.12/compose.yaml` y `mvp-v0.12/docker/`, commit `aa375ad`) y fue verificada; ver el [registro del 10/11](../Fase%203/Evidencias%20Proyecto/REGISTRO_VERIFICACION_DOCKER_2026-11-10.md).
+
 La lógica v0.12 se cotejó en lectura con el repositorio técnico. La configuración Docker exacta aún debe localizarse; los servicios, imágenes, puertos, /ws y volumen se respaldan en las evidencias publicadas. La verificación previa acredita stop/start de los mismos contenedores y restauración informada en logs; no recreación ni borrado del volumen.
 
 ## Antecedentes M0–M2
