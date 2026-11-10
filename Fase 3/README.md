@@ -14,6 +14,13 @@ En [Evidencias Proyecto](./Evidencias%20Proyecto/):
 
 Las salidas completas de las pruebas automáticas están en [docs/pruebas](../docs/pruebas/) y su resumen en [docs/TESTING.md](../docs/TESTING.md).
 
+## Borradores para el equipo
+
+| Archivo | Uso |
+|---|---|
+| [BORRADOR_Presentacion_Final_Galactum.pptx](./BORRADOR_Presentacion_Final_Galactum.pptx) | Borrador de 11 láminas con notas para el orador, basado en las evidencias de este repositorio. Ajustar al tiempo y a la pauta de la Fase 3 |
+| [Actas/PLANTILLA_Acta_Control_de_Avance_Galactum.docx](./Actas/PLANTILLA_Acta_Control_de_Avance_Galactum.docx) | Plantilla de acta con la revisión de avance prellenada con lo entregado; asistencia, observaciones y acuerdos se completan en la reunión |
+
 ## Pendiente para el cierre
 
 - Informe final y presentación final.
