@@ -48,6 +48,11 @@ Responsabilidades consignadas en la planificación del proyecto:
 - Soak test y profiling.
 - Trabajo conjunto en resolver de combate y documentación.
 
+### Juan Castro
+Se integró al equipo en la Fase 2. Aportes registrados en los repositorios:
+- Diseño e implementación de asteroides y minería con cancelación por combate (M3).
+- Documentación de arquitectura de la Fase 2: Vista Lógica, Diagrama de Componentes y Word consolidado.
+
 ## Metodología de trabajo
 El proyecto se planificó con Scrum:
 - Sprints de 2 semanas ([Sprint Backlog](./Fase%202/Evidencias%20Proyecto%20%28version%20Agil%29/Documento%2003%20-%20Sprint%20Backlog.md)).
