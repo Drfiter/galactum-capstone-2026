@@ -36,7 +36,7 @@
 - Pagos reales (Google Play Billing requiere una cuenta de Play Console; hoy las compras son simuladas).
 - SGM en NestJS + PostgreSQL (Equipo 1) y recuperación de contraseña.
 - HTTPS para publicar el servidor fuera del PC (proxy con certificado delante de nginx).
-- Exportar un APK nuevo: el publicado es del 25/10 y no incluye el trabajo de noviembre.
+- Probar en un teléfono real el APK v0.12.3 (exportado y firmado el 10/11: `releases/android/Galactum-2026-11-10-v0.12.3.apk` del repositorio técnico).
 - En el servidor dedicado, algunos textos generados por el servidor (misiones y eventos) se muestran en el idioma del servidor y no en el del jugador.
 
 ---
