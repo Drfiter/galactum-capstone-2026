@@ -34,3 +34,9 @@ El contenido y la estructura XML de los Word fueron comprobados. Sigue pendiente
 - [Aporte individual de Juan Castro](../Evidencias%20Individuales/Juan_Castro_Arquitectura_Fase2.md).
 
 El registro de revisión de arquitectura detalla sus comprobaciones; no extiende automáticamente esa validación visual a los Word anteriores. La configuración Docker original sigue pendiente de cotejo directo. No se ejecutaron pruebas nuevas del juego para este complemento.
+
+## Actualización del 10 de noviembre
+
+- [Documento 03 - Sprint Backlog](Documento%2003%20-%20Sprint%20Backlog.md), reconstruido desde el historial de commits del repositorio técnico.
+- La configuración Docker citada arriba quedó versionada en el repositorio técnico (commit `aa375ad`) y se verificó nuevamente: [registro del 10/11](../../Fase%203/Evidencias%20Proyecto/REGISTRO_VERIFICACION_DOCKER_2026-11-10.md).
+- Las evidencias posteriores a la Fase 2 (informes del feedback, video de demo y pruebas) están en [Fase 3](../../Fase%203/).
