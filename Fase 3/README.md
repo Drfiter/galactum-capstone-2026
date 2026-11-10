@@ -1,5 +1,9 @@
 # Fase 3 — Cierre del proyecto
 
+## Video de demo
+
+https://github.com/user-attachments/assets/ab06aad5-8893-4068-a2b7-e37a8ac6ce47
+
 ## Evidencias disponibles (10 de noviembre de 2026)
 
 En [Evidencias Proyecto](./Evidencias%20Proyecto/):
@@ -9,7 +13,7 @@ En [Evidencias Proyecto](./Evidencias%20Proyecto/):
 | [Informe_correcciones_feedback_2026-11-09.pdf](./Evidencias%20Proyecto/Informe_correcciones_feedback_2026-11-09.pdf) | Los 7 errores del feedback del 26/10: causa, arreglo, pruebas y capturas antes/después |
 | [Estado_feedback_2026-11-09.pdf](./Evidencias%20Proyecto/Estado_feedback_2026-11-09.pdf) | Estado al 9/11 de las 9 funcionalidades pedidas (4 parciales y 5 pendientes) |
 | [Informe_funcionalidades_feedback_2026-11-10.pdf](./Evidencias%20Proyecto/Informe_funcionalidades_feedback_2026-11-10.pdf) | Las 9 funcionalidades completadas, con pruebas, capturas y limitaciones |
-| [Galactum_demo_MVP_v0.12_2026-11-10.mp4](./Evidencias%20Proyecto/Galactum_demo_MVP_v0.12_2026-11-10.mp4) | Video de 1:33 grabado del juego en ejecución (tripulantes, Comandante, Armería, Asedio, progresión, LiveOps, Expediciones y endgame) |
+| [Galactum_demo_MVP_v0.12_2026-11-10.mp4](./Evidencias%20Proyecto/Galactum_demo_MVP_v0.12_2026-11-10.mp4) | Video de 1:33 grabado del juego en ejecución (también con reproductor arriba) (tripulantes, Comandante, Armería, Asedio, progresión, LiveOps, Expediciones y endgame) |
 | [REGISTRO_VERIFICACION_DOCKER_2026-11-10.md](./Evidencias%20Proyecto/REGISTRO_VERIFICACION_DOCKER_2026-11-10.md) | Docker versionado y verificado: build, salud, cuentas por nginx, persistencia y navegador |
 
 Las salidas completas de las pruebas automáticas están en [docs/pruebas](../docs/pruebas/) y su resumen en [docs/TESTING.md](../docs/TESTING.md).

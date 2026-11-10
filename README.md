@@ -10,6 +10,14 @@ El MVP v0.12 es jugable de punta a punta con un servidor autoritativo (embebido 
 
 Este repositorio CAPSTONE reúne las evidencias académicas del proyecto. El código del juego está en el repositorio técnico **Drfiter/galactum** (carpeta `mvp-v0.12/`). Ver la nota de confidencialidad al final.
 
+## Demo en video
+
+Grabación real del juego (1:33): tripulantes, Comandante, Armería, Asedio, progresión, LiveOps, Expediciones y endgame.
+
+https://github.com/user-attachments/assets/ab06aad5-8893-4068-a2b7-e37a8ac6ce47
+
+Copia descargable: [Galactum_demo_MVP_v0.12_2026-11-10.mp4](./Fase%203/Evidencias%20Proyecto/Galactum_demo_MVP_v0.12_2026-11-10.mp4).
+
 ## Público objetivo
 - Jugadores de Galactum (móvil y PC).
 - Equipos del proyecto que dependen de los servicios del Equipo 3.
