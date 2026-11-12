@@ -8,6 +8,7 @@
 | 3 | Proyecto | [Informe de correcciones del feedback (PDF)](../Fase%203/Evidencias%20Proyecto/Informe_correcciones_feedback_2026-11-09.pdf) |
 | 3 | Proyecto | [Estado frente al feedback (PDF)](../Fase%203/Evidencias%20Proyecto/Estado_feedback_2026-11-09.pdf) |
 | 3 | Proyecto | [Informe de las 9 funcionalidades agregadas (PDF)](../Fase%203/Evidencias%20Proyecto/Informe_funcionalidades_feedback_2026-11-10.pdf) |
+| 3 | Proyecto | [Notas del parche v0.12 (PDF)](../Fase%203/Evidencias%20Proyecto/Galactum_Notas_del_Parche_v0.12.pdf): resumen visual de los cambios del 8 al 10/11 |
 | 3 | Proyecto | Video de demo del juego, 1:33: [ver en línea](https://github.com/user-attachments/assets/ab06aad5-8893-4068-a2b7-e37a8ac6ce47) · [descargar MP4](../Fase%203/Evidencias%20Proyecto/Galactum_demo_MVP_v0.12_2026-11-10.mp4) |
 | 3 | Proyecto | [Verificación Docker del 10/11](../Fase%203/Evidencias%20Proyecto/REGISTRO_VERIFICACION_DOCKER_2026-11-10.md) con capturas del navegador |
 | 3 | Pruebas | [Salidas completas de las suites y del arnés de balance](./pruebas/) |
