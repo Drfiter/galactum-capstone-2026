@@ -29,7 +29,7 @@ Las salidas completas de las pruebas automáticas están en [docs/pruebas](../do
 ## Pendiente para el cierre
 
 - Informe final y presentación final.
-- Métricas finales y pruebas en un teléfono real del APK v0.12.3 (ya exportado el 10/11 en el repositorio técnico).
+- Métricas finales y pruebas en un teléfono real del APK v0.12.4 (exportado el 12/11 en el repositorio técnico, con «Jugar con cuenta»).
 - Actas de control de avance de las reuniones del equipo.
 
 No se marcarán como finalizadas funcionalidades sin evidencia verificable.
